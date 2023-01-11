@@ -77,7 +77,7 @@ const handleSubmit = async(e) => {
   loader(messageDiv);
 
   //fetch data from local server 
-  const response = await fetch('http://localhost:5001', {
+  const response = await fetch('https://codex-r8uq.onrender.com', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json'},
       body : JSON.stringify({prompt: data.get('prompt')
